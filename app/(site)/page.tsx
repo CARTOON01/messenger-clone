@@ -35,6 +35,7 @@ export default function Home() {
           Sign in to your Account
         </h2>
       </div>
+      {/* AuthForm */}
     </div>
   )
 }
