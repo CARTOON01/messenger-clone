@@ -1,7 +1,13 @@
 'use client';
 
+import { data } from "autoprefixer";
 import { useCallback, useState } from "react";
-import { FieldValues, useForm } from "react-hook-form";
+import { 
+    FieldValues,
+    SubmitHandler,
+    set,
+    useForm 
+} from "react-hook-form";
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -30,6 +36,24 @@ const AuthForm = () => {
             password: '',
         }
     });
+
+    const onSubmit: SubmitHandler<FieldValues> = (data) => {
+        setIsLoading(true);
+
+        if (variant === 'REGISTER') {
+            // Axios Register
+        }
+
+        if (variant === 'LOGIN') {
+            // NextAuth Login
+        }
+    }
+
+    const socialAction = (action: string) => {
+        setIsLoading(true);
+
+        // NextAuth Social Signin
+    }
 
     return (
         <div>Auth Form!</div>
