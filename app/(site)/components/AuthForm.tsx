@@ -10,6 +10,7 @@ import {
     set,
     useForm 
 } from "react-hook-form";
+import AuthSocialButton from "./AuthSocialButton";
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -109,6 +110,45 @@ const AuthForm = () => {
                                 </Button>
                             </div>
                         </form>
+
+                        <div className="mt-6">
+                                <div className="relative">
+                                    <div 
+                                        className="
+                                            absolute
+                                            insert-0
+                                            flex
+                                            items-center
+                                            justify-center"
+                                    >
+                                        <div 
+                                            className="
+                                                w-full 
+                                                border-t 
+                                                border-gray-300"
+                                        />
+                                            <div 
+                                                className="
+                                                    relative 
+                                                    flex 
+                                                    justify-center
+                                                    items-center
+                                                    text-sm
+                                            ">
+                                                <span className="
+                                                    px-2 
+                                                    bg-white 
+                                                    text-gray-500 ">
+                                                Or continue with
+                                                </span>
+                                        </div>
+
+                                            <div className="mt-6 flex gap-2">
+                                                    <AuthSocialButton />
+                                            </div>
+                                    </div>   
+                                </div>
+                        </div>
                 </div>
         </div>
     );
