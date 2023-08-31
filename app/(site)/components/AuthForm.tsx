@@ -118,8 +118,7 @@ const AuthForm = () => {
                                             absolute
                                             insert-0
                                             flex
-                                            items-center
-                                            justify-center"
+                                            items-center"
                                     >
                                         <div 
                                             className="
@@ -132,12 +131,11 @@ const AuthForm = () => {
                                                     relative 
                                                     flex 
                                                     justify-center
-                                                    items-center
                                                     text-sm
                                             ">
                                                 <span className="
-                                                    px-2 
                                                     bg-white 
+                                                    px-2
                                                     text-gray-500 ">
                                                 Or continue with
                                                 </span>
