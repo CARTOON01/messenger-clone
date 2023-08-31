@@ -30,7 +30,7 @@ const AuthSocialButton: React.FC<AuthSocialButtonProps>  = ({
         focus:outline-offset-0
         "
         >
-
+            <Icon />
         </button>
     );
 }
